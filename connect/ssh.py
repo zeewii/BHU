@@ -1,7 +1,7 @@
 #coding=utf-8
 
 #描述:使用ssh链接路由器的后台
-#作者：尹霞
+#作者：尹霞，曾祥卫
 import pexpect
 import datetime,os,time
 from data import data
@@ -30,7 +30,18 @@ def ssh_cmd(host,user,pwd,cmd):
                 return None
         # 输入密码.
         child.sendline(pwd)
-        child.expect(pexpect.EOF)
+
+        #列出输入密码后期望出现的字符串，'password',EOF，超时
+        i = child.expect(['password: ',pexpect.EOF,pexpect.TIMEOUT])
+        #匹配到字符'password: '，打印密码错误
+        if i == 0:
+            print u'密码输入错误！'
+        #匹配到了EOF，打印ssh登录成功，并输入命令后成功退出
+        elif i == 1:
+            print u'恭喜,ssh登录输入命令成功！'
+        #匹配到了超时，打印超时
+        else:
+            print u'输入命令后等待超时！'
 
         #将执行命令的时间和结果以追加的形式保存到log.txt文件中备份文件
         f = open('log.txt','a')
