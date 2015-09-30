@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/BHU2.iml" filepath="$PROJECT_DIR$/.idea/BHU2.iml" />
       <module fileurl="file://$PROJECT_DIR$/../H351/.idea/H351.iml" filepath="$PROJECT_DIR$/../H351/.idea/H351.iml" />
       <module fileurl="file://$PROJECT_DIR$/../H351v0.1/.idea/H351v0.1.iml" filepath="$PROJECT_DIR$/../H351v0.1/.idea/H351v0.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../bhu_svn/.idea/bhu_svn.iml" filepath="$PROJECT_DIR$/../bhu_svn/.idea/bhu_svn.iml" />
       <module fileurl="file://$PROJECT_DIR$/../zeng_2015/.idea/zeng_2015.iml" filepath="$PROJECT_DIR$/../zeng_2015/.idea/zeng_2015.iml" />
     </modules>
   </component>

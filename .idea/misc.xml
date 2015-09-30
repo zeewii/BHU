@@ -17,4 +17,7 @@
     <ConfirmationsSetting value="0" id="移除" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 2.7.9 (/usr/bin/python2.7)" project-jdk-type="Python SDK" />
+  <component name="SvnBranchConfigurationManager">
+    <option name="mySupportsUserInfoFilter" value="true" />
+  </component>
 </project>
