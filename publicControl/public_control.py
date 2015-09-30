@@ -77,3 +77,15 @@ def client_cmd(cmd):
     except Exception,e:
         print u"Client端在终端输入命令失败，原因如下：\n%s"%e
 
+#描述：新建或打开文件，并写入内容
+#输入：filename-文件名(也可以是文件的路径),写入的内容,content-写入的内容
+#输出：无
+def modify_file(filename,content):
+    #文件filename没有存在则新建文件，如果存在则会首先清空然后写入
+    file = open(filename,'w')
+    try:
+        #把内容content写入文件filename
+        file.writelines(content)
+    finally:
+        #关闭文件
+        file.close()
